@@ -1,0 +1,349 @@
+<!-- Layout dùng cho các view dạng một phần nội dung trong trang web -->
+
+
+
+
+<div>
+    <div style="padding-bottom:10px;">
+        <div class="btn-group">
+            <label class="btn btn-default">
+                <input type="checkbox" style="margin:0;" onchange="umsMessageCheckAll(this.checked)" />
+            </label>
+            <button title="Tải lại" data-toggle="tooltip" class="btn btn-default" type="button" onclick="umsGetMessageList(1)">
+                <span class="glyphicon glyphicon-refresh"></span>
+            </button>
+                <button title="Xóa tin nhắn" data-toggle="tooltip" class="btn btn-default" type="button" onclick="umsMessageTrash('a64e3fbf8f911031df524807de8da7a9','')">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+        </div>
+
+        <div class="pull-right">
+            <span class="text-muted">
+                <b>26</b> - <b>50</b> trên <b>88</b> tin nhắn
+            </span>
+            <div class="btn-group">
+                <a class="btn btn-default" onclick="umsGetMessageList(1)" title="Trang đầu">
+                    <span class="glyphicon glyphicon-fast-backward"></span>
+                </a>
+                <a class="btn btn-default" onclick="umsGetMessageList(1)" title="Trang trước">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="btn btn-default" onclick="umsGetMessageList(2)" title="Tải lại trang này">
+                    Trang <b>2</b>:<b>4</b>
+                </a>
+                <a class="btn btn-default" onclick="umsGetMessageList(3)" title="Trang sau">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                <a class="btn btn-default" onclick="umsGetMessageList(4)" title="Trang cuối">
+                    <span class="glyphicon glyphicon-fast-forward"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form id="__formMessageList">
+    <input name="__RequestVerificationToken" type="hidden" value="sH5Pqc2KpZiFEp8JI7OE-6ysXrzQgo7hauIc77neyZSz12U8met1cN__F8LDanHxyNRl_UXsfT5qAw3ExBita2kkaClIUN2NVKbTGwtfmTenFg7iorFZVsQnHiW1L_sCCJFmz5vEcTIekw-Wul6Kjn18bmI17ZGEHQnAieJ7kjNWQQNKhSt45Ygbq9hmw_pOIRYg77MlRziHEVNQfN1HwGszYr01" />
+    <table class="table">
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23864" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Ho&#224;ng Quốc Kh&#225;nh</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23864/">
+                        Re: Đề thi mẫu SQL Server
+                    </a>
+                </td>                
+                <td style="width:140px">01/12/2018 17:24</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23861" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">V&#245; Thị Diệu Hiền</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23861/">
+                        Re: Đề thi mẫu SQL Server
+                    </a>
+                </td>                
+                <td style="width:140px">01/12/2018 16:56</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23860" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Nguyễn Đăng Khoa</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23860/">
+                        Re: Đề thi mẫu SQL Server
+                    </a>
+                </td>                
+                <td style="width:140px">01/12/2018 16:55</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23621" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23621/">
+                        [Khoa CNTT - MSDNAA] Th&#244;ng b&#225;o về việc đăng k&#253; v&#224; k&#237;ch hoạt t&#224;i khoản Microsoft Imagine Premium
+                    </a>
+                </td>                
+                <td style="width:140px">26/11/2018 11:34</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23286" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">L&#234; Mỹ Cảnh</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23286/">
+                        C&#225;c m&#244;n học của thầy c&#225;c em được nghỉ học đến hết 18/11/2018
+                    </a>
+                </td>                
+                <td style="width:140px">08/11/2018 20:52</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23166" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23166/">
+                        Th&#244;ng b&#225;o về việc cử sinh vi&#234;n tham dự đối thoại sinh vi&#234;n CNTT cấp Khoa năm học 2018-2019
+                    </a>
+                </td>                
+                <td style="width:140px">04/11/2018 22:51</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23157" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Nguyễn B&#225; Phu</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23157/">
+                        TH&#212;NG B&#193;O NGHỈ HỌC
+                    </a>
+                </td>                
+                <td style="width:140px">04/11/2018 09:03</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23067" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23067/">
+                        Th&#244;ng b&#225;o: về việc cử đại diện của lớp tham dự buổi đối thoại sinh vi&#234;n cấp Khoa thường ni&#234;n
+                    </a>
+                </td>                
+                <td style="width:140px">30/10/2018 20:50</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23026" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23026/">
+                        B&#224;i tập v&#224; slide cho chương 3
+                    </a>
+                </td>                
+                <td style="width:140px">28/10/2018 22:39</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="23012" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/23012/">
+                        Th&#244;ng b&#225;o về việc cung cấp c&#226;u hỏi, &#253; kiến đ&#243;ng g&#243;p của sinh vi&#234;n cho hoạt động đối thoại sinh vi&#234;n cấp Khoa năm học 2018-2019
+                    </a>
+                </td>                
+                <td style="width:140px">27/10/2018 12:17</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22865" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22865/">
+                        Kết quả tự đ&#225;nh gi&#225; điểm r&#232;n luyện học kỳ 2 năm học 2017-2018 của c&#225;c lớp Tin K41
+                    </a>
+                </td>                
+                <td style="width:140px">19/10/2018 22:32</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22842" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">L&#234; Mỹ Cảnh</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22842/">
+                        Tuần n&#224;y c&#225;c em được nghỉ học
+                    </a>
+                </td>                
+                <td style="width:140px">19/10/2018 07:50</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22801" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22801/">
+                        Th&#244;ng b&#225;o về việc đ&#225;nh gi&#225; điểm r&#232;n luyện học kỳ II năm học 2017-2018
+                    </a>
+                </td>                
+                <td style="width:140px">18/10/2018 00:42</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22681" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22681/">
+                        Th&#244;ng b&#225;o nghỉ học s&#225;ng thứ 4 ng&#224;y 10/10/2018
+                    </a>
+                </td>                
+                <td style="width:140px">09/10/2018 18:58</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22599" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22599/">
+                        Slide t&#243;m tắt b&#224;i giảng chương 2: M&#244; h&#236;nh thực thể - mối quan hệ
+                    </a>
+                </td>                
+                <td style="width:140px">05/10/2018 10:54</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22578" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22578/">
+                        B&#224;i test SQL
+                    </a>
+                </td>                
+                <td style="width:140px">04/10/2018 14:10</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22298" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Thanh Lương</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22298/">
+                        Th&#244;ng b&#225;o mở lớp học Kỹ năng mềm (ngoại kh&#243;a) cho sinh vi&#234;n c&#243; sự hỗ trợ kinh ph&#237; của Nh&#224; trường
+                    </a>
+                </td>                
+                <td style="width:140px">19/09/2018 09:59</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22108" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Nguyễn B&#225; Phu</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22108/">
+                        V/v Thời kho&#225; biểu v&#224; ph&#242;ng học Nh&#243;m 4 TLHĐC
+                    </a>
+                </td>                
+                <td style="width:140px">10/09/2018 16:34</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22067" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">L&#234; Mỹ Cảnh</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22067/">
+                        Link diagram
+                    </a>
+                </td>                
+                <td style="width:140px">08/09/2018 09:37</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="22056" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Trần Nguy&#234;n Phong</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/22056/">
+                        Gi&#225;o tr&#236;nh v&#224; slide học phần Nhập m&#244;n CSDL
+                    </a>
+                </td>                
+                <td style="width:140px">07/09/2018 15:26</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="21980" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Nguyễn B&#225; Phu</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/21980/">
+                        TH&#212;NG B&#193;O NGHỈ HỌC
+                    </a>
+                </td>                
+                <td style="width:140px">04/09/2018 08:02</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="21794" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">L&#234; Mỹ Cảnh</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/21794/">
+                        T&#224;i liệu học tập SQL
+                    </a>
+                </td>                
+                <td style="width:140px">25/08/2018 07:54</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="21765" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Ho&#224;ng Kỳ Sơn</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/21765/">
+                        Th&#244;ng b&#225;o nhắc nhở ho&#224;n th&#224;nh khảo s&#225;t &#253; kiến của sinh vi&#234;n về hoạt động giảng dạy của giảng vi&#234;n!
+                    </a>
+                </td>                
+                <td style="width:140px">24/08/2018 15:40</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="21660" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">Nguyễn B&#225; Phu</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/21660/">
+                        TH&#212;NG B&#193;O NGHỈ HỌC
+                    </a>
+                </td>                
+                <td style="width:140px">21/08/2018 08:06</td>
+            </tr>
+            <tr style="">
+                <td style="width:20px">
+                    <input name="msgids" value="21021" type="checkbox" class="read" />
+                </td>
+                <td style="width:180px">L&#234; Mỹ Cảnh</td>
+                <td style="width:auto">
+                    <a href="/Student/Message/Details/ef76fd9817245e8d5d5e7bb80e3305b75b642450/21021/">
+                        Những bạn thi ACM chưa đ&#250;ng điểm
+                    </a>
+                </td>                
+                <td style="width:140px">12/07/2018 14:45</td>
+            </tr>
+    </table>
+</form>

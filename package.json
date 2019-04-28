@@ -1,0 +1,22 @@
+{
+  "name": "ums-core",
+  "version": "1.0.0",
+  "description": "Simple Crawl Data UMS HUSC",
+  "main": "index.js",
+  "dependencies": {
+    "facebook-chat-api": "^1.6.1",
+    "file-cookie-store": "^0.2.1",
+    "jsdom": "^14.0.0",
+    "nightmare": "^3.0.1",
+    "request": "^2.88.0",
+    "tough-cookie": "^3.0.1",
+    "tough-cookie-filestore": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node src/test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
